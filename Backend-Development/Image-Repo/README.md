@@ -23,16 +23,16 @@ Navigate to ImageApi directory and run the following command:
 
 ## API Endpoints
 URL: https://image-repo.azurewebsites.net
-* POST a User 
+### POST a User 
 - URL + /User
 
-* GET a User
+### GET a User
 - URL + /User/{Phone Number}
 - Example: https://image-repo.azurewebsites.net/User/2063317069
 
-* POST an Image
+### POST an Image
 - URL + /Image
 
-* GET all images by a User
+### GET all images by a User
 - URL + /Image/{User Id}
 * Example: https://image-repo.azurewebsites.net/Image/1
