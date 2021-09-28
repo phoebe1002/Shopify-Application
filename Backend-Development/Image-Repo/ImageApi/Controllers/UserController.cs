@@ -25,10 +25,10 @@ namespace ImageApi.Controllers
             return Created("api/Users", await _userBL.AddUser(newUser));
         }
 
-        [HttpGet("{phoneNumber}")]
-        public async Task<IActionResult> GetUserByPhoneNumber(string phoneNumber)
+        [HttpGet("{email}")]
+        public async Task<IActionResult> GetUserByEmail(string email)
         {
-            return Ok(await _userBL.GetUserByPhoneNumber(phoneNumber));
+            return Ok(await _userBL.GetUserByEmail(email));
         }
     }
 }

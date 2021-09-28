@@ -9,10 +9,10 @@ namespace Models
         public User(User user)
         {
             Id = user.Id;
-            PhoneNumber = user.PhoneNumber;
+            Email = user.Email;
         }
         public int Id { get; set; }
-        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
         public List<Image> Images { get; set; }
     }
 }

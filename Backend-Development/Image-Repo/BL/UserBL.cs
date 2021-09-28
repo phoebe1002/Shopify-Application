@@ -16,9 +16,9 @@ namespace BL
         {
             return await _userDL.AddUser(user);
         }
-        public async Task<User> GetUserByPhoneNumber(string phoneNumber)
+        public async Task<User> GetUserByEmail(string email)
         {
-            return await _userDL.GetUserByPhoneNumber(phoneNumber);
+            return await _userDL.GetUserByEmail(email);
         }
         public async Task<User> GetUserById(int id)
         {

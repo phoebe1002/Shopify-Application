@@ -20,9 +20,9 @@ namespace  DL
             _context.ChangeTracker.Clear();
             return added;
         }
-        public async Task<User> GetUserByPhoneNumber(string phoneNumber)
+        public async Task<User> GetUserByEmail(string email)
         {
-            return await _context.Users.FirstOrDefaultAsync(user => user.PhoneNumber == phoneNumber);
+            return await _context.Users.FirstOrDefaultAsync(user => user.Email == email);
         }
         public async Task<User> GetUserById(int id)
         {
