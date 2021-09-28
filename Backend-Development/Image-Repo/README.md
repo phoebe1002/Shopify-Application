@@ -3,6 +3,14 @@
 ## Overview
 This is the backend development for Image Repository Application that offers developers APIs for adding and retrieving user and image information. 
 
+## Tech Stack
+* .NET 5
+* C#
+* EF Core (ORM)
+* ASP.NET Web API
+* PostgreSQL DB / ElephantSQL
+* Azure for hosting
+
 ## Start up
 0. Directory Structure
 * Separated 3 application layers and 1 direcotory for models. 
@@ -47,14 +55,6 @@ This is the backend development for Image Repository Application that offers dev
 ## Tables
 * Users
 * Images
-
-## Tech Stack
-* .NET 5
-* C#
-* EF Core (ORM)
-* ASP.NET Web API
-* PostgreSQL DB / ElephantSQL
-* Azure for hosting
 
 ## API Endpoints
 URL: https://image-repo.azurewebsites.net

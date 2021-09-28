@@ -1,27 +1,23 @@
-# ImageRepo
+# Image Repository - Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+## Overview
+* This is the frontend development for Image Repository Application that offers users to login, signup, add and search images.
 
-## Development server
+## Tech Stack
+* Angular
+* Typescript
+* Node.Js
+* NPM
+* Auth0
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## User Stories
+* As a user, I should be able to sign up for an account and sign in.
+* As a user, I should be able to add image to my repository
+* As a user, I should be able to set visibility rules for images when adding
+* As a user, I should be able to view all images that shared from other users.
+* As  a user, I should be able to search images by its name
 
-## Code scaffolding
+## Start up
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* see more details from the Setup.md
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
