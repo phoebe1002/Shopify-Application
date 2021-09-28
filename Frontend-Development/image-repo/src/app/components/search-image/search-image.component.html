@@ -1,0 +1,22 @@
+<body>
+    <div class="container transparent">
+      <h3>Image Repository &nbsp;
+        <i class="fa fa-plus-square-o plus" aria-hidden="true" (click)="GoToAdd()"></i>
+      </h3>
+      <div class="form-group">
+        <br/>
+        <h6><input type="text" [(ngModel)]="filterByLetters" class="form-control" placeholder="Search By Text"></h6>
+      </div>
+        <br/>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let image of images;">
+                    <td>
+                        <img src="{{image.imageURL}}" style="width:500px;height:500px;">
+                        {{image.name}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </body>

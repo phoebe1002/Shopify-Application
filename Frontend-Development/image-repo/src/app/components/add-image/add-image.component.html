@@ -1,0 +1,33 @@
+<body>
+    <div class="container transparent">
+        
+        <form (ngSubmit)="onSubmit()" #imageForm="ngForm">
+            <div class="form-group">
+                <br/>
+                <input type="text" class="form-control" [(ngModel)]="newImage.name" #name="ngModel" name="name"
+                    placeholder="Name the image">
+            </div>
+            <div class="form-group">
+                <br/>
+                <input type="text" class="form-control" [(ngModel)]="newImage.imageURL" #name="ngModel" name="name"
+                    placeholder="Enter the image URL">
+            </div>
+            <div class="form-group">
+                <br/>
+                <label>
+                    <input type="checkbox" [value]="newImage.isShared" (change)="onCheckBoxChangeForIsShared($event)" />
+                    &nbsp;
+                    Visible to all users
+                </label>
+            </div>
+            <div class="form-group">
+                <br/>
+                <button type="submit" class="btn btn-warning">Add</button>
+                &nbsp; &nbsp;
+                <button class="btn btn-secondary" (click)='goToAll()'>Cancel</button>
+            </div>
+
+        </form>
+        
+    </div>
+</body>
